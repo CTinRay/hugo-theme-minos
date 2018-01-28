@@ -171,6 +171,7 @@ body {
 .article-meta a,
 a.article-title,
 .article-entry a,
+.article-i18n a,
 .article-more-link a,
 #comments a,
 .archive-year-wrap a,
@@ -275,6 +276,9 @@ a.article-title:hover,
 }
 .article-entry dt {
   font-weight: bold;
+}
+.article-i18n a {
+  color: SteelBlue;
 }
 #header {
   font-size: 14px;
@@ -1096,4 +1100,7 @@ pre .php .xml {
   font-size: 16px;
   font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+.lang-link {
+    color: SteelBlue;
 }
