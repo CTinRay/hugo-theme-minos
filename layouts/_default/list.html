@@ -7,6 +7,11 @@
             <div class="archive-category-wrap">
                 <span class="archive-category">{{ .Title }}</span>
             </div>
+            {{ if .Content }}
+            <div class="article-entry" itemprop="articleBody">
+                {{ .Content }}
+            </div>
+            {{ end }}            
             <div class="archives">
                 {{ range .Paginator.Pages }}
                     {{ partial "li.html" . }}
